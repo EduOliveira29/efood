@@ -2,12 +2,10 @@ import styled from 'styled-components'
 import { Cores } from '../styles'
 
 export const Card = styled.div`
-  max-width: 320px;
+  width: 320px;
   background-color: ${Cores.corSecundaria};
-  display: inline-block;
 
   img {
-    display: block;
     width: 100%;
   }
 `
@@ -15,19 +13,33 @@ export const Card = styled.div`
 export const Titulo = styled.h4`
   padding: 10px;
   font-size: 16px;
+  line-height: 100%;
 `
 
 export const Descricao = styled.p`
   padding: 8px 0;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   margin: 8px;
 `
+
+export const Container = styled.div`
+  diplay: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`
+
 export const Botão = styled.button`
-  width: 90%;
   background-color: ${Cores.corPrincipal};
   color: ${Cores.corSecundaria};
-  font-size: 16px;
-  padding: 8px;
-  border: none;
+  line-height: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
   margin: 8px;
+  padding: 8px;
+  border: 8px;
+  width: 90%;
 `

@@ -12,4 +12,6 @@ export const Imagem = styled.div`
   color: ${Cores.corBranca};
   padding-left: 180px;
   justify-content: space-around;
+  line-height: 100%;
+  font-size: 32px;
 `

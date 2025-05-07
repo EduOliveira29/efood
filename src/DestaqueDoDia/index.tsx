@@ -1,5 +1,6 @@
 import ImagemRestaurante from '../Assets/images/HiokiSushi.png'
 import IconeEstrela from '../Assets/images/estrela.png'
+import { BotãoTag } from '../styles'
 import {
   Card,
   Nota,
@@ -7,20 +8,21 @@ import {
   Icon,
   Img,
   Descricao,
-  Botão,
-  BotãoTipo,
-  BotãoDestaque
+  BotãoDestaque,
+  BotãoLink
 } from './styles'
 
 const DestaqueDoDia = () => (
   <Card>
     <Img src={ImagemRestaurante} alt="" />
     <BotãoDestaque>Destaque da Semana</BotãoDestaque>
-    <BotãoTipo>Japonesa</BotãoTipo>
+    <BotãoTag>Japonesa</BotãoTag>
     <Nota>
       <Titulo>Hioki Sushi</Titulo>
       <div>
-        <p>4.9</p>
+        <p>
+          <b>4.9</b>
+        </p>
         <Icon src={IconeEstrela} alt="" />
       </div>
     </Nota>
@@ -30,7 +32,7 @@ const DestaqueDoDia = () => (
       rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão
       sem sair do lar com nosso delivery!
     </Descricao>
-    <Botão>Saiba Mais</Botão>
+    <BotãoLink to="./Perfil">Saiba Mais</BotãoLink>
   </Card>
 )
 

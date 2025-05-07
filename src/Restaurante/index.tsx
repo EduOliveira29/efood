@@ -1,24 +1,18 @@
 import ImagemRestaurante from '../Assets/images/imagemDoRestaurante.png'
 import IconeEstrela from '../Assets/images/estrela.png'
-import {
-  Card,
-  Nota,
-  Titulo,
-  Icon,
-  Img,
-  Descricao,
-  BotãoTipo,
-  BotãoLink
-} from './styles'
+import { Card, Nota, Titulo, Icon, Img, Descricao, BotãoLink } from './styles'
+import { BotãoTag } from '../styles'
 
 const Restaurante = () => (
   <Card>
     <Img src={ImagemRestaurante} alt="" />
-    <BotãoTipo>Italiana</BotãoTipo>
+    <BotãoTag>Italiana</BotãoTag>
     <Nota>
       <Titulo>La Dolce Vita Trattoria</Titulo>
       <div>
-        <p>4.6</p>
+        <p>
+          <b>4.6</b>
+        </p>
         <Icon src={IconeEstrela} alt="" />
       </div>
     </Nota>

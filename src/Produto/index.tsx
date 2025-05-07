@@ -1,5 +1,5 @@
 import pizza from '../Assets/images/pizza.png'
-import { Card, Titulo, Descricao, Botão } from './styles'
+import { Card, Titulo, Descricao, Botão, Container } from './styles'
 
 const Produto = () => (
   <Card>
@@ -9,7 +9,9 @@ const Produto = () => (
       A clássica Marguerita: molho de tomate suculento, mussarela derretida,
       manjericão fresco e um toque de azeite. Sabor e simplicidade!
     </Descricao>
-    <Botão>Adicionar ao carrinho</Botão>
+    <Container>
+      <Botão>Adicionar ao carrinho</Botão>
+    </Container>
   </Card>
 )
 

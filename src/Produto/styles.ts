@@ -4,6 +4,7 @@ import { Cores } from '../styles'
 export const Card = styled.div`
   width: 320px;
   background-color: ${Cores.corSecundaria};
+  padding: 8px;
 
   img {
     width: 100%;
@@ -17,7 +18,6 @@ export const Titulo = styled.h4`
 `
 
 export const Descricao = styled.p`
-  padding: 8px 0;
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -35,11 +35,9 @@ export const Botão = styled.button`
   background-color: ${Cores.corPrincipal};
   color: ${Cores.corSecundaria};
   line-height: 100%;
-  font-weight: 700;
   font-size: 14px;
   text-align: center;
-  margin: 8px;
   padding: 8px;
-  border: 8px;
-  width: 90%;
+  width: 100%;
+  border: none;
 `

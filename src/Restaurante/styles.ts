@@ -1,12 +1,14 @@
 import styled from 'styled-components'
-import { Cores } from '../styles'
+import { Cores, BotãoTag } from '../styles'
 import { Link } from 'react-router-dom'
 
 export const Card = styled.div`
-  max-width: 472px;
-  background-color: ${Cores.corDeFundo};
+  width: 472px;
+  background-color: ${Cores.corBranca};
   color: ${Cores.corSecundaria};
   position: relative;
+  border: 2px solid red;
+  padding-bottom: 8px;
 `
 
 export const Img = styled.img`
@@ -15,14 +17,14 @@ export const Img = styled.img`
 `
 
 export const Titulo = styled.h3`
-  padding-top: 8px;
+  padding: 8px;
   font-size: 18px;
   line-height: 100%;
 `
 
 export const Descricao = styled.p`
-  line-height: 22px;
   padding: 16px 8px;
+  line-height: 22px;
 `
 
 export const Nota = styled.div`
@@ -40,16 +42,25 @@ export const Nota = styled.div`
 `
 
 export const Icon = styled.img`
+  padding-left: 4px;
   height: 24px;
   max-width: 24px;
-  margin-left: 4px;
+`
+
+export const BotãoDestaque = styled(BotãoTag)`
+  position: absolute;
+  top: 16px;
+  right: 90px;
+  color: ${Cores.corBranca};
+  font-size: 12px;
 `
 
 export const BotãoLink = styled(Link)`
   background-color: ${Cores.corSecundaria};
   color: ${Cores.corPrincipal};
   text-decoration: none;
-  margin: 8px;
-  padding: 8px;
-  border: none;
+  font-size: 14px;
+  margin: 4px;
+  padding: 4px;
+  border: 8px;
 `

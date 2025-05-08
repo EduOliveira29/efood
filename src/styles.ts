@@ -26,7 +26,6 @@ export const Botão = styled.button`
   background-color: ${Cores.corSecundaria};
   color: ${Cores.corPrincipal};
   line-height: 100%;
-  font-size: 14px;
   text-align: center;
   margin: 8px;
   padding: 8px;

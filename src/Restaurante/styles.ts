@@ -7,7 +7,7 @@ export const Card = styled.div`
   background-color: ${Cores.corBranca};
   color: ${Cores.corSecundaria};
   position: relative;
-  border: 2px solid red;
+  border: 1px solid red;
   padding-bottom: 8px;
 `
 
@@ -25,6 +25,7 @@ export const Titulo = styled.h3`
 export const Descricao = styled.p`
   padding: 16px 8px;
   line-height: 22px;
+font-size: 14px;
 `
 
 export const Nota = styled.div`

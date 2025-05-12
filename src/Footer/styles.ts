@@ -14,7 +14,7 @@ export const Imagem = styled.div`
   p {
     color: ${Cores.corSecundaria};
     text-align: center;
-font-size: 10px;
+    font-size: 10px;
   }
 `
 export const ListaLinks = styled.ul`

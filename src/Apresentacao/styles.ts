@@ -6,13 +6,19 @@ export const Imagem = styled.div`
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   color: ${Cores.corBranca};
-  padding-left: 180px;
-  justify-content: space-around;
   line-height: 100%;
   font-size: 32px;
+  display: flex;
+`
+export const Container = styled.div`
+  flex-direction: column;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
 
   h2 {
     font-weight: 100;

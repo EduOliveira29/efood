@@ -25,7 +25,7 @@ export const Titulo = styled.h3`
 export const Descricao = styled.p`
   padding: 16px 8px;
   line-height: 22px;
-font-size: 14px;
+  font-size: 14px;
 `
 
 export const Nota = styled.div`

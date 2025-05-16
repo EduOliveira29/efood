@@ -1,4 +1,5 @@
-import IconeEstrela from '../Assets/images/estrela.png'
+import { BotãoTag } from '../../styles'
+import IconeEstrela from '../../Assets/images/estrela.png'
 import {
   Card,
   Nota,
@@ -9,7 +10,6 @@ import {
   BotãoLink,
   BotãoDestaque
 } from './styles'
-import { BotãoTag } from '../styles'
 
 export type Props = {
   id?: number
@@ -20,12 +20,12 @@ export type Props = {
   descricao?: string
   capa?: string
   cardapio?: {
-    foto: string
-    preco: number
-    id: number
-    nome: string
-    descricao: string
-    porcao: string
+    foto?: string
+    preco?: number
+    id?: number
+    nome?: string
+    descricao?: string
+    porcao?: string
   }
 }
 

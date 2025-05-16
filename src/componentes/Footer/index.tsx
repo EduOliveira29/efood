@@ -1,8 +1,8 @@
-import ImagemFundo from '../Assets/images/Fundo.svg'
-import Logo from '../Assets/images/logo.svg'
-import instagram from '../Assets/images/iconInstagram.png'
-import facebook from '../Assets/images/iconFacebook.png'
-import twitter from '../Assets/images/iconTwitter.png'
+import ImagemFundo from '../../Assets/images/Fundo.svg'
+import Logo from '../../Assets/images/logo.svg'
+import instagram from '../../Assets/images/iconInstagram.png'
+import facebook from '../../Assets/images/iconFacebook.png'
+import twitter from '../../Assets/images/iconTwitter.png'
 
 import { Imagem, ListaLinks } from './styles'
 

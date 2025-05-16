@@ -1,4 +1,4 @@
-import { Restaurante } from '../pages/Home'
+import { Restaurante } from '../../pages/Home'
 import Estabelecimentos from '../Restaurante'
 import { Container, Lista } from './styles'
 
@@ -13,7 +13,7 @@ const ListaDeRestaurante = ({ restaurantes }: Props) => {
         {restaurantes.map((restaurantes) => (
           <li key={restaurantes.id}>
             <Estabelecimentos
-              id={restaurantes.id}
+              id={restaurantes.cardapio.id}
               titulo={restaurantes.titulo}
               destacado={restaurantes.destacado}
               tipo={restaurantes.tipo}

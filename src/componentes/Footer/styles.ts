@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Cores } from '../styles'
+import { Cores } from '../../styles'
 
 export const Imagem = styled.div`
   height: 320px;

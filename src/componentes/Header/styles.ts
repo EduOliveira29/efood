@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Cores } from '../styles'
+import { Cores } from '../../styles'
 
 export const Container = styled.div`
   max-width: 1024px;

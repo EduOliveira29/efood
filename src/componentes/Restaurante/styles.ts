@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Cores, BotãoTag } from '../styles'
+import { Cores, BotãoTag } from '../../styles'
 import { Link } from 'react-router-dom'
 
 export const Card = styled.div`

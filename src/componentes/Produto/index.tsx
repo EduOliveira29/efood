@@ -1,4 +1,4 @@
-import { Restaurante } from '../pages/Home'
+import { Restaurante } from '../../pages/Home'
 import { Card, Titulo, Descricao, Botão, Container } from './styles'
 
 type Props = {

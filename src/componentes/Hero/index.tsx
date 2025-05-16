@@ -1,5 +1,5 @@
-import ImagemFundo from '../Assets/images/Fundo.svg'
-import Logo from '../Assets/images/logo.svg'
+import ImagemFundo from '../../Assets/images/Fundo.svg'
+import Logo from '../../Assets/images/logo.svg'
 import { Imagem } from './styles'
 
 const Hero = () => (

@@ -1,4 +1,4 @@
-import ImagemFundo from '../Assets/images/imagemDoRestaurante.png'
+import ImagemFundo from '../../Assets/images/imagemDoRestaurante.png'
 import { Container, Imagem } from './styles'
 
 const Apresentacao = () => (

@@ -1,6 +1,6 @@
+import { Restaurante } from '../../pages/Home'
 import Produto from '../Produto'
 import { Container, Lista } from './styles'
-import { Restaurante } from '../pages/Home/index'
 
 type Props = {
   restaurantes: Restaurante[]
@@ -13,7 +13,7 @@ export const formataPreço = (preco = 0) => {
   }).format(preco)
 }
 
-const ListaDeProdutos = ({ restaurantes }: Props) => {
+const ListaDeRestaurante = ({ restaurantes }: Props) => {
   return (
     <Container>
       <Lista>
@@ -32,4 +32,4 @@ const ListaDeProdutos = ({ restaurantes }: Props) => {
     </Container>
   )
 }
-export default ListaDeProdutos
+export default ListaDeRestaurante

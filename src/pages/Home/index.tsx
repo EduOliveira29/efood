@@ -1,7 +1,8 @@
-import Hero from '../../Hero/index'
-import ListaDeRestaurante from '../../ListaDeRestaurantes/index'
-import Footer from '../../Footer/index'
 import { useEffect, useState } from 'react'
+import Hero from '../../componentes/Hero'
+import ListaDeRestaurante from '../../componentes/ListaDeRestaurantes'
+import Footer from '../../componentes/Footer'
+import Modal from '../../componentes/Modal'
 
 export type Restaurante = {
   id: number
@@ -39,6 +40,7 @@ const Home = () => {
       <Hero />
       <ListaDeRestaurante restaurantes={Restaurantes} />
       <Footer />
+      <Modal />
     </>
   )
 }

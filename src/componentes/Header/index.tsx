@@ -1,5 +1,5 @@
-import backgrund from '../Assets/images/Fundo.svg'
-import logo from '../Assets/images/logo.svg'
+import backgrund from '../../Assets/images/Fundo.svg'
+import logo from '../../Assets/images/logo.svg'
 import { Container, Imagem } from './styles'
 
 const Header = () => (

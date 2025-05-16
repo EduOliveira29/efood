@@ -1,29 +1,59 @@
-import ImagemRestaurante from '../Assets/images/imagemDoRestaurante.png'
 import IconeEstrela from '../Assets/images/estrela.png'
-import { Card, Nota, Titulo, Icon, Img, Descricao, BotãoLink } from './styles'
+import {
+  Card,
+  Nota,
+  Titulo,
+  Icon,
+  Img,
+  Descricao,
+  BotãoLink,
+  BotãoDestaque
+} from './styles'
 import { BotãoTag } from '../styles'
 
-const Restaurante = () => (
-  <Card>
-    <Img src={ImagemRestaurante} alt="" />
-    <BotãoTag>Italiana</BotãoTag>
-    <Nota>
-      <Titulo>La Dolce Vita Trattoria</Titulo>
-      <div>
-        <p>
-          <b>4.6</b>
-        </p>
-        <Icon src={IconeEstrela} alt="" />
-      </div>
-    </Nota>
-    <Descricao>
-      A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você!
-      Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo
-      no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor
-      inesquecível. Peça já!
-    </Descricao>
-    <BotãoLink to="/Perfil">Saiba mais</BotãoLink>
-  </Card>
-)
+export type Props = {
+  id?: number
+  titulo?: string
+  destacado?: boolean
+  tipo?: string
+  avaliacao?: string
+  descricao?: string
+  capa?: string
+  cardapio?: {
+    foto: string
+    preco: number
+    id: number
+    nome: string
+    descricao: string
+    porcao: string
+  }
+}
 
-export default Restaurante
+const Estabelecimentos = ({
+  avaliacao,
+  capa,
+  descricao,
+  destacado,
+  tipo,
+  titulo
+}: Props) => {
+  return (
+    <Card>
+      <Img src={capa} alt="" />
+      {destacado === true && <BotãoDestaque>Destaque do Dia</BotãoDestaque>}
+      <BotãoTag>{tipo}</BotãoTag>
+      <Nota>
+        <Titulo>{titulo}</Titulo>
+        <div>
+          <p>
+            <b>{avaliacao}</b>
+          </p>
+          <Icon src={IconeEstrela} alt="" />
+        </div>
+      </Nota>
+      <Descricao>{descricao}</Descricao>
+      <BotãoLink to={`/restaurantes/id`}>Saiba mais</BotãoLink>
+    </Card>
+  )
+}
+export default Estabelecimentos

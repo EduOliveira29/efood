@@ -1,18 +1,24 @@
-import pizza from '../Assets/images/pizza.png'
+import { Restaurante } from '../pages/Home'
 import { Card, Titulo, Descricao, Botão, Container } from './styles'
 
-const Produto = () => (
-  <Card>
-    <img src={pizza} alt="" />
-    <Titulo>Pizza Marguerita</Titulo>
-    <Descricao>
-      A clássica Marguerita: molho de tomate suculento, mussarela derretida,
-      manjericão fresco e um toque de azeite. Sabor e simplicidade!
-    </Descricao>
-    <Container>
-      <Botão>Adicionar ao carrinho</Botão>
-    </Container>
-  </Card>
-)
+type Props = {
+  restaurantes: Restaurante[]
+}
 
+const Produto = ({ restaurantes }: Props) => {
+  return (
+    <>
+      {restaurantes.map((restaurantes) => (
+        <Card key={restaurantes.cardapio.id}>
+          <img src={restaurantes.cardapio.foto} alt="" />
+          <Titulo>{restaurantes.cardapio.nome}</Titulo>
+          <Descricao>{restaurantes.cardapio.descricao}</Descricao>
+          <Container>
+            <Botão>Adicionar ao carrinho</Botão>
+          </Container>
+        </Card>
+      ))}
+    </>
+  )
+}
 export default Produto

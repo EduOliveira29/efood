@@ -1,23 +1,34 @@
-import { Restaurante } from '../../pages/Home'
 import { Card, Titulo, Descricao, Botão, Container } from './styles'
 
-type Props = {
-  restaurantes: Restaurante[]
+export type Props = {
+  id?: number
+  titulo?: string
+  destacado?: boolean
+  tipo?: string
+  avaliacao?: string
+  descricao?: string
+  capa?: string
+  cardapio?: {
+    foto?: string
+    preco?: number
+    id: number
+    nome?: string
+    descricao?: string
+    porcao?: string
+  }
 }
 
-const Produto = ({ restaurantes }: Props) => {
+const Produto = ({ cardapio }: Props) => {
   return (
     <>
-      {restaurantes.map((restaurantes) => (
-        <Card key={restaurantes.cardapio.id}>
-          <img src={restaurantes.cardapio.foto} alt="" />
-          <Titulo>{restaurantes.cardapio.nome}</Titulo>
-          <Descricao>{restaurantes.cardapio.descricao}</Descricao>
-          <Container>
-            <Botão>Adicionar ao carrinho</Botão>
-          </Container>
-        </Card>
-      ))}
+      <Card>
+        <img src={cardapio?.foto} alt="" />
+        <Titulo>{cardapio?.nome}</Titulo>
+        <Descricao>{cardapio?.descricao}</Descricao>
+        <Container>
+          <Botão>Adicionar ao carrinho</Botão>
+        </Container>
+      </Card>
     </>
   )
 }

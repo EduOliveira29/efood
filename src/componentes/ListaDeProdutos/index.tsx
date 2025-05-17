@@ -1,16 +1,25 @@
 import { Restaurante } from '../../pages/Home'
 import Produto from '../Produto'
+
 import { Container, Lista } from './styles'
 
-type Props = {
+export type Props = {
   restaurantes: Restaurante[]
-}
-
-export const formataPreço = (preco = 0) => {
-  return new Intl.NumberFormat('pt-br', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(preco)
+  id?: number
+  titulo?: string
+  destacado?: boolean
+  tipo?: string
+  avaliacao?: string
+  descricao?: string
+  capa?: string
+  cardapio?: {
+    foto?: string
+    preco?: number
+    id: number
+    nome?: string
+    descricao?: string
+    porcao?: string
+  }
 }
 
 const ListaDeRestaurante = ({ restaurantes }: Props) => {
@@ -18,13 +27,13 @@ const ListaDeRestaurante = ({ restaurantes }: Props) => {
     <Container>
       <Lista>
         {restaurantes.map((restaurantes) => (
-          <li key={restaurantes.id}>
+          <li key={restaurantes.cardapio?.id}>
             <Produto
-              id={restaurantes.cardapio.id}
-              foto={restaurantes.cardapio.foto}
-              descricao={restaurantes.cardapio.descricao}
-              nome={restaurantes.cardapio.nome}
-              preco={restaurantes.cardapio.preco}
+              id={restaurantes.cardapio?.id}
+              titulo={restaurantes.cardapio?.nome}
+              tipo={restaurantes.tipo}
+              descricao={restaurantes.descricao}
+              capa={restaurantes.cardapio?.foto}
             />
           </li>
         ))}

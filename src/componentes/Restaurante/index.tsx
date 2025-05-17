@@ -35,7 +35,8 @@ const Estabelecimentos = ({
   descricao,
   destacado,
   tipo,
-  titulo
+  titulo,
+  id
 }: Props) => {
   return (
     <Card>
@@ -52,7 +53,7 @@ const Estabelecimentos = ({
         </div>
       </Nota>
       <Descricao>{descricao}</Descricao>
-      <BotãoLink to={`/restaurantes/id`}>Saiba mais</BotãoLink>
+      <BotãoLink to={`/restaurantes/${id}`}>Saiba mais</BotãoLink>
     </Card>
   )
 }

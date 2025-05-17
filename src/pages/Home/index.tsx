@@ -5,14 +5,14 @@ import Footer from '../../componentes/Footer'
 import Modal from '../../componentes/Modal'
 
 export type Restaurante = {
-  id: number
-  titulo: string
-  destacado: boolean
-  tipo: string
-  avaliacao: string
-  descricao: string
-  capa: string
-  cardapio: {
+  id?: number
+  titulo?: string
+  destacado?: boolean
+  tipo?: string
+  avaliacao?: string
+  descricao?: string
+  capa?: string
+  cardapio?: {
     foto: string
     preco: number
     id: number
